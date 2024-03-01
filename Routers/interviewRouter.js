@@ -1,4 +1,3 @@
-// src/routes/interviewRoutes.js
 const express = require('express');
 const interviewRouters = express.Router();
 
@@ -11,6 +10,5 @@ interviewRouters.post('/schedule', async (req, res) => {
   }
 });
 
-// Add other routes as needed
 
 module.exports = {interviewRouters};

@@ -1,4 +1,3 @@
-// src/routes/courseScoresRoutes.js
 const express = require('express');
 const { CourseScoresService } = require('../Service/courseService');
 const courseRouter = express.Router();
@@ -12,6 +11,5 @@ courseRouter.post('/addScores', async (req, res) => {
   }
 });
 
-// Add other routes as needed
 
 module.exports = {courseRouter};

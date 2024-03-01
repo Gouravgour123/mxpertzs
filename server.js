@@ -3,15 +3,13 @@ const batchRouter = require('./Routers/batchRoutes');
 const { courseRouter } = require('./Routers/courseRoute');
 const { interviewRouters } = require('./Routers/interviewRouter');
 const { resultRouter } = require('./Routers/resultRoute');
-// const { studentRoute } = require('./Routers/studentRouter');
-// const { interviewRoute } = require('./Routers/interviewRouter');
 require('./Db/mongoose')
 const app = express();
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}));
 const PORT = 3300;
 
-// app.use('/students', studentRoutes);
+
 app.use('/batches', batchRouter);
 app.use('/course-scores', courseRouter);
 app.use('/update', interviewRouters);
